@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickable Text</title>
+    <style>
+        /* Центрирование всей страницы */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+
+        /* Контейнер для изображения */
+        .image-container {
+            position: relative;
+            width: 45%; /* Пропорциональное уменьшение */
+        }
+
+        /* Стили изображения */
+        .image-container img {
+            width: 100%; /* Картинка заполняет контейнер */
+            height: auto;
+            display: block;
+        }
+
+        /* Стили текста, который становится интерактивным */
+        .image-container a {
+            position: absolute;
+            bottom: 10%; /* Ставим текст чуть выше нижнего края */
+            left: 50%;
+            transform: translateX(-50%);
+            color: purple;
+            font-weight: bold;
+            font-size: 16px; /* Размер текста */
+            text-decoration: none; /* Убираем подчеркивание */
+            background-color: transparent; /* Фон прозрачный */
+            cursor: pointer;
+        }
+
+        /* Эффект при наведении */
+        .image-container a:hover {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <!-- Картинка -->
+        <img src="https://static.wixstatic.com/media/33a08a_fc8a22ac7cad4cc1945af2b4f51c5ee3~mv2.png" alt="Your Image">
+
+        <!-- Надпись, которая становится кликабельной -->
+        <a href="https://www.u-digitalmarketplace.com/categories/video">
+            4K background videos
+        </a>
+    </div>
+</body>
+</html>
